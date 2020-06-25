@@ -1,4 +1,4 @@
-#include "lib/universegenerator/universegenerator.h"
+#include "universegenerator/universegenerator.h"
 
 int main(int argc, const char **argv)
 {

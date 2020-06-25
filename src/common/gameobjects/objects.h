@@ -7,7 +7,7 @@
 
 namespace ogw {
 
-typedef uint64_t gobj_t;
+typedef std::string gobj_t;
 
 class GameObject {
 public:
@@ -16,6 +16,7 @@ public:
 	virtual ~GameObject() {}
 
 	void setName(const std::wstring &name) { m_name = name; }
+	const gobj_t &getId() const { return m_id; }
 private:
 	std::wstring m_name;
 	gobj_t m_id = 0;
