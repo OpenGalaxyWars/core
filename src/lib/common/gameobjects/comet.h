@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gameobject.h"
+#include "objects.h"
 
 namespace ogw {
 
