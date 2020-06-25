@@ -4,10 +4,9 @@
 
 namespace ogw {
 
-class Moon: public StellarObject
+class Comet: public StellarObject
 {
-public:
-private:
+
 };
 
 }

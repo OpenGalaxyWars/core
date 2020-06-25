@@ -4,7 +4,7 @@
 
 namespace ogw {
 
-class Galaxy: public GameObject
+class Galaxy: public StellarObject
 {
 
 };

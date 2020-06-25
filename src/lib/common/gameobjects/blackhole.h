@@ -4,7 +4,7 @@
 
 namespace ogw {
 
-class Blachole: public GameObject
+class Blachole: public StellarObject
 {
 
 };

@@ -4,7 +4,7 @@
 
 namespace ogw {
 
-class Planet: public GameObject
+class Planet: public StellarObject
 {
 
 };

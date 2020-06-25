@@ -5,7 +5,7 @@ namespace ogw {
 void UniverseGenerator::run()
 {
 	for (uint64_t i = 1; i <= m_params.max_objects; i++) {
-		auto obj = new GameObject(i);
+		auto obj = new StellarObject(i, L"pouet");
 		delete obj;
 	}
 }
