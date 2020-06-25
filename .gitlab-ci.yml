@@ -1,0 +1,15 @@
+image: debian:10
+
+stages:
+  - build
+
+build:debian:10:
+  stage: build
+  before_script:
+   - apt-get update -y
+   - apt-get -y install build-essential cmake
+  script:
+    - mkdir build
+    - cd build
+    - cmake ../src/
+    - make

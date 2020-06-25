@@ -2,4 +2,4 @@
 */CMakeFiles/*
 .a
 .o
-src/build/*
+/build/*
