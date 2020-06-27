@@ -1,9 +1,9 @@
 #include "universegenerator/universegenerator.h"
+#include "client/window.h"
 
 int main(int argc, const char **argv)
 {
-	auto params = ogw::UniverseGeneratorParams{100};
-	auto gen = new ogw::UniverseGenerator(params);
-	gen->run();
+	auto window = new ogw::Window();
+	window->run();
 	return 0;
 }

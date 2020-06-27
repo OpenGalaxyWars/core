@@ -7,7 +7,7 @@ build:debian:10:
   stage: build
   before_script:
    - apt-get update -y
-   - apt-get -y install build-essential cmake
+   - apt-get -y install build-essential cmake libsdl2-dev
   script:
     - mkdir build
     - cd build
