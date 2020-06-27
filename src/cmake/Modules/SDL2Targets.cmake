@@ -40,24 +40,7 @@ unset(_targetsDefined)
 unset(_targetsNotDefined)
 unset(_expectedTargets)
 
-
-# Compute the installation prefix relative to this file.
-get_filename_component(_IMPORT_PREFIX "${CMAKE_CURRENT_LIST_FILE}" PATH)
-# Use original install prefix when loaded through a
-# cross-prefix symbolic link such as /lib -> /usr/lib.
-get_filename_component(_realCurr "${_IMPORT_PREFIX}" REALPATH)
-get_filename_component(_realOrig "/usr/lib/cmake/SDL2" REALPATH)
-if(_realCurr STREQUAL _realOrig)
-  set(_IMPORT_PREFIX "/usr/lib/cmake/SDL2")
-endif()
-unset(_realOrig)
-unset(_realCurr)
-get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
-get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
-get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
-if(_IMPORT_PREFIX STREQUAL "/")
-  set(_IMPORT_PREFIX "")
-endif()
+set(_IMPORT_PREFIX "/usr")
 
 # Create imported target SDL2::SDL2
 add_library(SDL2::SDL2 SHARED IMPORTED)
