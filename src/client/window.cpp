@@ -73,7 +73,7 @@ bool Window::initSDL()
 
     m_window = SDL_CreateWindow("Demo",
         SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
-        m_init_displaymode.w, m_init_displaymode.h, SDL_WINDOW_OPENGL|SDL_WINDOW_SHOWN|SDL_WINDOW_ALLOW_HIGHDPI);
+        m_init_displaymode.w, m_init_displaymode.h, SDL_WINDOW_OPENGL|SDL_WINDOW_SHOWN|SDL_WINDOW_ALLOW_HIGHDPI|SDL_WINDOW_RESIZABLE);
 
 	if (!m_window) {
 		std::cerr << "Unable to create main window. Error was: " << SDL_GetError() << std::endl;
